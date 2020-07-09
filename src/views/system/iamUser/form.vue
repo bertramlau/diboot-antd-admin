@@ -55,7 +55,7 @@
         <a-col :span="12">
           <a-form-item label="角色">
             <a-select
-              v-if="more.iamRoleKvList"
+              v-if="more.roleKvList"
               :getPopupContainer="getPopupContainer"
               mode="multiple"
               placeholder="请选择角色"
@@ -68,7 +68,7 @@
               ]"
             >
               <a-select-option
-                v-for="(role, index) in more.iamRoleKvList"
+                v-for="(role, index) in more.roleKvList"
                 :key="index"
                 :value="`${role.v}`"
               >
